@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap%27");
+@import url("https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&display=swap%27");
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: black;
+  font-family: "Roboto Condensed", Verdana, sans-serif;
+}
+
+/* h1 {
+  font-family: "Cuprum", Impact, sans-serif;
+} */
