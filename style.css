@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap%27");
 @import url("https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&display=swap%27");
 
+
+
+/* GENERAL */
+
 * {
   box-sizing: border-box;
   padding: 0px;
@@ -10,8 +14,155 @@
 body {
   background-color: black;
   font-family: "Roboto Condensed", Verdana, sans-serif;
+  color: white;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* h1 {
-  font-family: "Cuprum", Impact, sans-serif;
+
+
+/* SECTION CRYPTO LIVE */
+
+section {
+  width: 87%;
+}
+
+/* SUBTITLE */
+
+.subtitle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
+h1 {
+  font-family: 'Cuprum', Impact, sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtitle-line {
+  width: 127px;
+  height: 5px;
+  background-color: #35A18B;
+  border-radius: 5px;
+}
+
+/* GRAPH SELECTED CRYPTO */
+
+.graph-container {
+  margin-top: 25px;
+  height: 290px;
+  max-height: 290px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 4px 11px rgba(53, 161, 139, 0.69);
+}
+
+.name-revealed-container {
+  width: 125px;
+  height: 34px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(88, 87, 87, 0.3) 100%), #35A18B;
+  border-radius: 10px;
+  padding: 2px 6px 2px 6px;
+}
+
+.name-revealed-container .name-logo {
+  width: 27px;
+  height: 27px;
+}
+
+.name-revealed-container p {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.name-unrevealed-container {
+  display: none;
+}
+
+.graph-container .graph-image .image-selected-graph {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  margin-top: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/* .graph-container .graph-image .image-unselected-graph {
+  display: none;
 } */
+
+
+/* GRID OF CRYPTOS */
+
+.cryptos-grid {
+  margin-top: 14px;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 14px;
+}
+
+.crypto-bloc-selected,
+.crypto-bloc-unselected {
+  display: flex;
+  align-items: center;
+  background-color: #35A18B;
+  border: solid 1px white;
+  border-radius: 10px;
+  padding: 2px 3px 2px 6px;
+  box-shadow: 0px 4px 11px rgba(53, 161, 139, 0.69);
+}
+
+.crypto-bloc-selected {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(88, 87, 87, 0.3) 100%), #35A18B;
+}
+
+.crypto-bloc-unselected {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(88, 87, 87, 0.3) 100%), #FFFFFF;
+}
+
+.crypto-bloc-selected img,
+.crypto-bloc-unselected img {
+  width: 27px;
+  height: 27px;
+}
+
+.crypto-bloc-selected p,
+.crypto-bloc-unselected p {
+  margin-left: 5px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.selected-evolution {
+  color: white;
+}
+
+.positive-evolution {
+  color: #04BE00;
+}
+
+.negative-evolution {
+  color: #FF0000;
+}
+
+
+/* END OF SECTION CRYPTO LIVE */
