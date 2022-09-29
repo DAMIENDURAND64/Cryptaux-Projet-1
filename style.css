@@ -95,11 +95,15 @@ h1 {
   display: none;
 }
 
-.graph-container .graph-image .image-selected-graph {
+.graph-container .graph-images {
+  overflow: hidden;
+}
+
+.graph-container .image-selected-graph {
   display: flex;
   align-items: flex-end;
+  height: 100%;
   width: 100%;
-  margin-top: 10px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
