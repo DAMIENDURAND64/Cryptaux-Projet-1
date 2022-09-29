@@ -12,7 +12,7 @@ body {
   font-family: "Roboto Condensed", Verdana, sans-serif;
 }
 
-h1 {
+.h1-contactThem {
   margin-bottom: 10px;
   font-family: "Cuprum", Impact, sans-serif;
   color: white;
@@ -20,7 +20,7 @@ h1 {
   font-weight: normal;
 }
 
-hr {
+.hr-contactThem {
   width: 40%;
   height: 5px;
   background-color: #35A18B;
@@ -29,7 +29,7 @@ hr {
   margin: auto
 }
 
-p {
+.p-contactThem {
   color: white;
   margin-bottom: 5px;
 }
@@ -38,7 +38,8 @@ p {
   padding: 10px 20px;
 }
 
-input,
+.input-name,
+.input-email,
 select,
 textarea {
   width: 100%;
@@ -49,12 +50,12 @@ textarea {
   background: radial-gradient(#ffffff, lightgrey);
 }
 
-.message {
+.messageThem {
   height: 75px;
   max-width: 100%;
 }
 
-.button-send {
+.button-send-contact {
   background-color: #007860;
   float: right;
   border: solid;
