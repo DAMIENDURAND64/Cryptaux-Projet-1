@@ -99,7 +99,7 @@ h1 {
   overflow: hidden;
 }
 
-.graph-container .image-selected-graph {
+.graph-container .graph-image .image-selected-graph {
   display: flex;
   align-items: flex-end;
   height: 100%;
@@ -108,9 +108,9 @@ h1 {
   border-bottom-left-radius: 10px;
 }
 
-/* .graph-container .graph-image .image-unselected-graph {
+.graph-container .graph-image .image-unselected-graph {
   display: none;
-} */
+}
 
 
 /* GRID OF CRYPTOS */
