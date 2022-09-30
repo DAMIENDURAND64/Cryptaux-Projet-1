@@ -1,3 +1,25 @@
+// Nav and burger menu
+
+let link = document.getElementById('link');
+let burger = document.getElementById('burger');
+let ul = document.querySelector('ul');
+
+link.addEventListener('click', function (def) {
+    def.preventDefault()
+    burger.classList.toggle('open')
+    ul.classList.toggle('open')
+})
+
+
+// Contact them
+
+const button = document.getElementById("buttonSend");
+
+button.addEventListener("click", function () {
+    const name = document.getElementById("inputName");
+    const yourName = name.value;
+    alert(`Hey ${yourName}, we will get back to you shortly !!!`)
+});
 // Declaration variables
 
 let displayBitcoin = document.getElementById('bitcoin-container-click');
@@ -100,3 +122,4 @@ displayCardano.addEventListener('click', function (def) {
 // }
 
 // console.log(showBitcoin(Bitcoin, bitcoin))
+
