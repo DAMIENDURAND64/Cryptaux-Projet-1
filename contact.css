@@ -48,6 +48,7 @@ textarea {
   border: solid white;
   filter: drop-shadow(1px 5px 5px #35A18B);
   background: radial-gradient(#ffffff, lightgrey);
+  z-index: 1;
 }
 
 .messageThem {

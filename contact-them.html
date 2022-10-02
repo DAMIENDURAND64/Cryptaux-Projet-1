@@ -6,30 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="style.css">
     <title>Contact Them</title>
 </head>
 
 <body>
-    <h1 class="h1-contactThem">CONTACT THEM</h1>
-    <hr class="hr-contactThem">
-    <div class="form">
-        <p class="p-contactThem">Name</p>
-        <input type="text" class="input-name" placeholder="Your name" id="inputName"><br><br>
-        <p class="p-contactThem">Email</p>
-        <input type="mail" class="input-email" placeholder="Enter your email here ..."></input><br><br>
-        <p class="p-contactThem">Choose your Topic</p>
-        <select class="select-tipo">
-            <option></option>
-            <option> Report bugs
-            <option> About currency
-            <option> Ask them something
-            <option> New subject to work on
-            <option> Something else ?
-        </select><br><br>
-        <p class="p-contactThem">Message</p>
-        <textarea class="messageThem" placeholder="Write your message here ..."></textarea>
+    <header>
+        <nav>
+            <div class="burger-container">
+                <a id="link" href="home.html"><span id="burger"></span></a>
+            </div>
+            <img class="logo" src="images/logo.png" alt="Logo Cryptaux" />
+            <ul class="list-unstyled">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about-them.html">About them</a></li>
+                <li><a href="contact-them.html">Contact them</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-contactThem">
+        <h1 class="h1-contactThem">CONTACT THEM</h1>
+        <hr class="hr-contactThem">
+        <div class="form">
+            <p class="p-contactThem">Name</p>
+            <input type="text" class="input-name" placeholder="Your name" id="inputName"><br><br>
+            <p class="p-contactThem">Email</p>
+            <input type="mail" class="input-email" placeholder="Enter your email here ..."></input><br><br>
+            <p class="p-contactThem">Choose your Topic</p>
+            <select class="select-tipo">
+                <option></option>
+                <option> Report bugs
+                <option> About currency
+                <option> Ask them something
+                <option> New subject to work on
+                <option> Something else ?
+            </select><br><br>
+            <p class="p-contactThem">Message</p>
+            <textarea class="messageThem" placeholder="Write your message here ..."></textarea>
+            <div>
+                <button class="button-send-contact" id="buttonSend">Send</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h1>NEWSLETTER</h1>
+            <hr />
+        </div>
 
-        <button class="button-send-contact" id="buttonSend">Send</button>
-    </div>
+        <div>
+            <p>Don’t miss a thing about crypto ! Subscribe to our newsletter</p>
+
+            <div class="input">
+                <input class="email-footer" id="emailAddress" type="email" />
+                <input class="click-footer" id="button" type="submit" value="Subscribe" />
+            </div>
+        </div>
+        <div class="legacy">
+            <ul>
+                <li>Mentions légales</li>
+                <li>CGU</li>
+                <li>SMDJT - 2022</li>
+            </ul>
+        </div>
+    </footer>
     <script src="/script.js"></script>
 </body>

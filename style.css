@@ -14,7 +14,7 @@ body {
   font-family: "Roboto Condensed", Verdana, sans-serif;
   color: white;
   width: 100vw;
-  display: flex;
+  /*display: flex;*/
   flex-direction: column;
   align-items: center;
 }
@@ -71,11 +71,9 @@ h1 {
   margin: 10px;
   display: flex;
   align-items: center;
-  background: radial-gradient(
-      50% 50% at 50% 50%,
+  background: radial-gradient(50% 50% at 50% 50%,
       rgba(255, 255, 255, 0) 0%,
-      rgba(88, 87, 87, 0.3) 100%
-    ),
+      rgba(88, 87, 87, 0.3) 100%),
     #35a18b;
   border-radius: 10px;
   padding: 2px 6px 2px 6px;
@@ -137,20 +135,16 @@ h1 {
 }
 
 .crypto-bloc-selected {
-  background: radial-gradient(
-      50% 50% at 50% 50%,
+  background: radial-gradient(50% 50% at 50% 50%,
       rgba(255, 255, 255, 0) 0%,
-      rgba(88, 87, 87, 0.3) 100%
-    ),
+      rgba(88, 87, 87, 0.3) 100%),
     #35a18b;
 }
 
 .crypto-bloc-unselected {
-  background: radial-gradient(
-      50% 50% at 50% 50%,
+  background: radial-gradient(50% 50% at 50% 50%,
       rgba(255, 255, 255, 0) 0%,
-      rgba(88, 87, 87, 0.3) 100%
-    ),
+      rgba(88, 87, 87, 0.3) 100%),
     #ffffff;
 }
 
@@ -189,9 +183,9 @@ h1 {
   color: #ff0000;
 }
 
-main {
+/*main {
   height: 500px;
-}
+}*/
 
 nav {
   display: flex;
@@ -274,6 +268,7 @@ header {
 }
 
 header ul {
+  z-index: 2;
   background: #007860;
   position: absolute;
   width: 65%;
