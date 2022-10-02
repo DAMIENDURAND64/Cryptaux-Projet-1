@@ -11,19 +11,23 @@
 </head>
 
 <body>
+    <!-- HEADER SECTION -->
     <header>
-        <nav>
-            <div class="burger-container">
-                <a id="link" href="home.html"><span id="burger"></span></a>
-            </div>
-            <img class="logo" src="images/logo.png" alt="Logo Cryptaux" />
-            <ul class="list-unstyled">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about-them.html">About them</a></li>
-                <li><a href="contact-them.html">Contact them</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <div class="burger-container">
+          <a id="link" href="home.html"><span id="burger"></span></a>
+        </div>
+        <a id="logo-home" href="home.html">
+          <img class="logo" src="images/logo.png" alt="Logo Cryptaux" />
+        </a>
+        <ul class="list-unstyled">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about-them.html">About them</a></li>
+          <li><a href="contact-them.html">Contact them</a></li>
+        </ul>
+      </nav>
     </header>
+
     <main class="main-contactThem">
         <h1 class="h1-contactThem">CONTACT THEM</h1>
         <hr class="hr-contactThem">
@@ -48,27 +52,42 @@
             </div>
         </div>
     </main>
-    <footer>
-        <div>
-            <h1>NEWSLETTER</h1>
-            <hr />
-        </div>
-
-        <div>
-            <p>Don’t miss a thing about crypto ! Subscribe to our newsletter</p>
-
-            <div class="input">
-                <input class="email-footer" id="emailAddress" type="email" />
-                <input class="click-footer" id="button" type="submit" value="Subscribe" />
+        <!-- FOOTER SECTION -->
+        <footer>
+          <div class="container-all-newsletter">
+            <div class="subtitle-container" id="subtitle-container-footer">
+              <h1>NEWSLETTER</h1>
+              <div class="subtitle-line" id="subtitle-line-footer"></div>
             </div>
-        </div>
-        <div class="legacy">
+    
+            <p>
+              Don’t miss a thing about crypto !<br />Subscribe to our newsletter
+            </p>
+    
+            <div class="container-input-footer">
+              <input
+                class="email-footer"
+                id="emailAddress"
+                type="email"
+                placeholder="email"
+              />
+              <input
+                class="click-footer"
+                id="button"
+                type="submit"
+                value="Subscribe"
+              />
+            </div>
+          </div>
+    
+          <div class="legacy">
             <ul>
-                <li>Mentions légales</li>
-                <li>CGU</li>
-                <li>SMDJT - 2022</li>
+              <li>Mentions légales</li>
+              <li>CGU</li>
+              <li>SMDJT - 2022</li>
             </ul>
-        </div>
-    </footer>
+          </div>
+        </footer>
+    
     <script src="/contact.js"></script>
 </body>

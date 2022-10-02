@@ -1,0 +1,56 @@
+/* ABOUT THEM */
+
+.carousel {
+  margin-top: 250px;
+  position: relative;
+  height: 400px;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+
+.carousel div {
+  position: absolute;
+  transition: transform 1s;
+  left: 1s;
+  opacity: 1s;
+  z-index: 0s;
+  opacity: 1;
+}
+
+.team-pic {
+  width: 400px;
+  transition: width 1s;
+}
+
+.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%);
+  transform: translateX(-50%);
+}
+
+.hideLeft + img {
+  width: 200px;
+}
+
+.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%);
+  transform: translateX(-50%);
+}
+.hideRight + img {
+  width: 200px;
+}
+
+.prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50%);
+  transform: translateX(-50%);
+}
+
+.prev + img {
+  width: 300px;
+}
