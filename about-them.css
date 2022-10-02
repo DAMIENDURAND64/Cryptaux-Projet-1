@@ -21,7 +21,13 @@ body {
 }
 
 input[type="radio"] {
-  /*display: none;*/
+  display: none;
+}
+
+.cards {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
 }
 
 .card {
@@ -47,81 +53,136 @@ input[type="radio"] {
   align-items: center;
 }
 
-.cards {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 20px;
+#about {
+  border: 1px solid white;
+  width: 50%;
+  height: 50%;
 }
 
 img {
   width: 100%;
-  height: 100%;
+  height: 60%;
   border-radius: 10px;
   object-fit: cover;
 }
 
-/*#item-1:checked ~ .cards #song-5,
-#item-2:checked ~ .cards #song-1,
-#item-3:checked ~ .cards #song-2,
-#item-4:checked ~ .cards #song-3,
-#item-5:checked ~ .cards #song-4 {
-  transform: translatex(-40%) scale(0.8);
-  opacity: 0.4;
-  z-index: 0;
-}*/
-
-#item-1:checked ~ .cards #song-5,
-#item-2:checked ~ .cards #song-1,
-#item-3:checked ~ .cards #song-2,
-#item-4:checked ~ .cards #song-3,
-#item-5:checked ~ .cards #song-4 {
-  border: 1px solid white;
-  transform: translatex(-50%) scale(0.6);
-  opacity: 0.2;
-  z-index: 3;
+.john {
+  display: none;
 }
 
-#item-1:checked ~ .cards #song-4,
-#item-2:checked ~ .cards #song-5,
-#item-3:checked ~ .cards #song-1,
-#item-4:checked ~ .cards #song-2,
-#item-5:checked ~ .cards #song-3 {
-  border: 1px solid red;
-  transform: translatex(-30%) scale(0.8);
-  opacity: 1;
-  z-index: 4;
-}
-
-#item-1:checked ~ .cards #song-3,
-#item-2:checked ~ .cards #song-4,
-#item-3:checked ~ .cards #song-5,
-#item-4:checked ~ .cards #song-1,
-#item-5:checked ~ .cards #song-2 {
-  border: 1px solid yellow;
-  transform: translatex(50%) scale(0.6);
-  opacity: 0.2;
-  z-index: 3;
-}
-
-#item-1:checked ~ .cards #song-2,
-#item-2:checked ~ .cards #song-3,
-#item-3:checked ~ .cards #song-4,
-#item-4:checked ~ .cards #song-5,
-#item-5:checked ~ .cards #song-1 {
-  border: 1px solid blue;
-  transform: translatex(30%) scale(0.8);
-  opacity: 1;
-  z-index: 4;
-}
-
-#item-1:checked ~ .cards #song-1,
-#item-2:checked ~ .cards #song-2,
-#item-3:checked ~ .cards #song-3,
-#item-4:checked ~ .cards #song-4,
-#item-5:checked ~ .cards #song-5 {
-  border: 1px solid green;
+#item-1:checked ~ .cards #picture-1,
+#item-2:checked ~ .cards #picture-2,
+#item-3:checked ~ .cards #picture-3,
+#item-4:checked ~ .cards #picture-4,
+#item-5:checked ~ .cards #picture-5 {
   transform: translatex(0) scale(1);
   opacity: 1;
-  z-index: 5;
+  z-index: 3;
+}
+
+#item-1:checked ~ .cards #picture-2,
+#item-2:checked ~ .cards #picture-3,
+#item-3:checked ~ .cards #picture-4,
+#item-4:checked ~ .cards #picture-5,
+#item-5:checked ~ .cards #picture-1 {
+  transform: translatex(-30%) scale(0.8);
+  opacity: 0.8;
+  z-index: 2;
+}
+
+#item-1:checked ~ .cards #picture-3,
+#item-2:checked ~ .cards #picture-4,
+#item-3:checked ~ .cards #picture-5,
+#item-4:checked ~ .cards #picture-1,
+#item-5:checked ~ .cards #picture-2 {
+  transform: translatex(-50%) scale(0.6);
+  opacity: 0.2;
+  z-index: 1;
+}
+
+#item-1:checked ~ .cards #picture-4,
+#item-2:checked ~ .cards #picture-5,
+#item-3:checked ~ .cards #picture-1,
+#item-4:checked ~ .cards #picture-2,
+#item-5:checked ~ .cards #picture-3 {
+  transform: translatex(50%) scale(0.6);
+  opacity: 0.2;
+  z-index: 1;
+}
+
+#item-1:checked ~ .cards #picture-5,
+#item-2:checked ~ .cards #picture-1,
+#item-3:checked ~ .cards #picture-2,
+#item-4:checked ~ .cards #picture-3,
+#item-5:checked ~ .cards #picture-4 {
+  transform: translatex(30%) scale(0.8);
+  opacity: 0.8;
+  z-index: 2;
+}
+
+.player {
+  background-color: #fff;
+  border-radius: 8px;
+  min-width: 320px;
+  padding: 16px 16px;
+}
+
+.upper-part {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.song-info {
+  width: calc(100% - 32px);
+  display: block;
+}
+
+.song-info .title {
+  color: #403d40;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.sub-line {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.subtitle {
+  font-size: 12px;
+  line-height: 16px;
+  color: #c6c5c6;
+}
+
+.info-area {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  transition: transform 0.4s ease-in;
+}
+
+#item-1:checked ~ .player #test {
+  transform: translateY(-5px);
+}
+
+#item-2:checked ~ .player #test {
+  transform: translateY(-105px);
+}
+
+#item-3:checked ~ .player #test {
+  transform: translateY(-210px);
+}
+
+#item-4:checked ~ .player #test {
+  transform: translateY(-315px);
+}
+
+#item-5:checked ~ .player #test {
+  transform: translateY(-420px);
 }
