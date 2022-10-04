@@ -12,6 +12,10 @@ body {
   font-family: "Roboto Condensed", Verdana, sans-serif;
 }
 
+main {
+  width: 100%;
+}
+
 .h1-contactThem {
   margin-bottom: 10px;
   font-family: "Cuprum", Impact, sans-serif;
@@ -35,6 +39,7 @@ body {
 }
 
 .form {
+  width: 100%;
   padding: 10px 20px;
 }
 
