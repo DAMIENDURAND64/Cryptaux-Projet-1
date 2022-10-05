@@ -444,3 +444,181 @@ h2 {
 p {
   font-size: 12px;
 }
+main {
+  height: 500px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px 0 35px;
+  background-color: #35a18b;
+  width: 100%;
+  height: 120px;
+}
+
+.logo {
+  margin-left: 10px;
+  width: 237px;
+  height: 46px;
+}
+
+#burger {
+  width: 40px;
+  height: 5px;
+  background: white;
+  display: inline-block;
+  position: relative;
+  left: 6px;
+  border-radius: 10px;
+}
+
+.burger-container {
+  width: 52px;
+  height: 52px;
+  background-color: #007860;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.burger-container a {
+  height: 52px;
+  width: 52px;
+}
+
+#burger::before,
+#burger::after {
+  content: "";
+  width: 40px;
+  height: 5px;
+  background: white;
+  display: inline-block;
+  position: absolute;
+  transform-origin: center;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+}
+
+#burger::before {
+  top: 13px;
+}
+
+#burger::after {
+  top: 26px;
+}
+
+#burger.open {
+  background: transparent;
+}
+
+#burger.open::before {
+  transform: rotate(135deg);
+  top: 13px;
+}
+
+#burger.open::after {
+  transform: rotate(-135deg);
+  top: 13px;
+}
+
+header ul {
+  background: #007860;
+  position: absolute;
+  width: 65%;
+  height: 100%;
+  left: 0;
+  top: 120px;
+  opacity: 80%;
+  padding: 10px 0;
+  transform: scaleY(0);
+  transform-origin: left top;
+  transition: all 0.5s ease;
+}
+
+ul.open {
+  transform: scaleY(1);
+}
+
+header li {
+  padding: 40px 10px 40px 35px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #35a18b;
+  height: 250px;
+}
+
+h1 {
+  font-family: "Cuprum", Impact, sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  margin-top: 1%;
+  font-weight: normal;
+}
+hr {
+  width: 25%;
+  height: 5px;
+  background-color: white;
+  border-radius: 2px;
+  border: #35a18b;
+  margin: 5px auto 15px auto;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.email-footer {
+  border-radius: 5px;
+  border: white;
+}
+
+.click-footer {
+  border-radius: 5px;
+  background-color: #007860;
+  color: white;
+  width: 25%;
+  border: none;
+  margin-left: 4%;
+}
+
+footer p {
+  color: aliceblue;
+  text-align: center;
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+footer .legacy ul {
+  color: aliceblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+footer li {
+  list-style: none;
+  padding-left: 33px;
+  padding-right: 33px;
+  font-size: 11px;
+  margin: 10px 0;
+}
+
+/* End footer */
