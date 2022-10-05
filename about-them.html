@@ -1,53 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style-generic.css" />
+    <link rel="stylesheet" href="style/about-team.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="carousel.css" />
-  <title>Document</title>
-</head>
+    <title>About them</title>
+  </head>
 
-<body>
-  <main>
-    <h1>ABOUT THEM</h1>
-    <hr />
-    <div id="carousel" class="carousel">
-      <div class="hideLeft">
-        <img src="images/profil-picture.jpg" alt="profil-picture" />
+  <body>
+    <!-- HEADER SECTION -->
+    <header>
+      <nav>
+        <div class="burger-container">
+          <a id="link" href="home.html"><span id="burger"></span></a>
+        </div>
+        <a id="logo-home" href="home.html">
+          <img class="logo" src="images/logo.png" alt="Logo Cryptaux" />
+        </a>
+        <ul class="list-unstyled">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about-them.html">About them</a></li>
+          <li><a href="contact-them.html">Contact them</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container-top-body-image">
+        <img
+          class="top-body-image"
+          style="height: 260px"
+          src="images/photo_about_top_body-forMobile.png"
+          alt="image of a hand touching a tablet"
+        />
       </div>
 
-      <div class="prevLeftSecond">
-        <img src="images/profil-picture.jpg" alt="profil-picture" />
+      <!-- ABOUT THEM SECTION -->
+
+      <section>
+        <div class="subtitle-container">
+          <h1>ABOUT THEM</h1>
+          <div class="subtitle-line"></div>
+        </div>
+
+        <div id="carousel" class="carousel">
+          <div class="hideLeft">
+            <img
+              class="team-pic"
+              src="images/profil-picture.jpg"
+              alt="profil-picture"
+            />
+          </div>
+
+          <div class="prevLeftSecond">
+            <img
+              class="team-pic"
+              src="images/profil-picture.jpg"
+              alt="profil-picture"
+            />
+          </div>
+
+          <div class="prev">
+            <img
+              class="team-pic"
+              src="images/profil-picture.jpg"
+              alt="profil-picture"
+            />
+          </div>
+
+          <div class="selected">
+            <img
+              class="team-pic"
+              src="images/profil-picture.jpg"
+              alt="profil-picture"
+            />
+          </div>
+
+          <div class="next">
+            <img
+              class="team-pic"
+              src="images/profil-picture.jpg"
+              alt="profil-picture"
+            />
+          </div>
+
+          <div class="nextRightSecond">
+            <img
+              class="team-pic"
+              src="images/profil-picture.jpg"
+              alt="profil-picture"
+            />
+          </div>
+
+          <div class="hideRight">
+            <img
+              class="team-pic"
+              src="images/profil-picture.jpg"
+              alt="profil-picture"
+            />
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button id="prev">prev</button>
+          <button id="next">next</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+      <div class="container-all-newsletter">
+        <div class="subtitle-container" id="subtitle-container-footer">
+          <h1>NEWSLETTER</h1>
+          <div class="subtitle-line" id="subtitle-line-footer"></div>
+        </div>
+
+        <p>
+          Don’t miss a thing about crypto !<br />Subscribe to our newsletter
+        </p>
+
+        <div class="container-input-footer">
+          <input
+            class="email-footer"
+            id="emailAddress"
+            type="email"
+            placeholder="email"
+          />
+          <input
+            class="click-footer"
+            id="button"
+            type="submit"
+            value="Subscribe"
+          />
+        </div>
       </div>
 
-      <div class="prev">
-        <img src="images/profil-picture.jpg" alt="profil-picture" />
+      <div class="legacy">
+        <ul>
+          <li>Mentions légales</li>
+          <li>CGU</li>
+          <li>SMDJT - 2022</li>
+        </ul>
       </div>
+    </footer>
 
-      <div class="selected">
-        <img src="images/profil-picture.jpg" alt="profil-picture" />
-      </div>
-
-      <div class="next">
-        <img src="images/profil-picture.jpg" alt="profil-picture" />
-      </div>
-
-      <div class="nextRightSecond">
-        <img src="images/profil-picture.jpg" alt="profil-picture" />
-      </div>
-
-      <div class="hideRight">
-        <img src="images/profil-picture.jpg" alt="profil-picture" />
-      </div>
-    </div>
-
-    <div class="buttons">
-      <button id="prev">prev</button>
-      <button id="next">next</button>
-    </div>
-  </main>
-</body>
-
+    <script src="about-them.js"></script>
+  </body>
 </html>
