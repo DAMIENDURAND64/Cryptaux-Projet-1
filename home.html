@@ -4,17 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/style-generic.css" />
+    <link rel="stylesheet" href="style/articles.css" />
+    <link rel="stylesheet" href="style/live-crypto.css" />
     <title>Document</title>
   </head>
 
   <body>
+    <!-- HEADER SECTION -->
     <header>
       <nav>
         <div class="burger-container">
           <a id="link" href="home.html"><span id="burger"></span></a>
         </div>
-        <img class="logo" src="images/logo.png" alt="Logo Cryptaux" />
+        <a id="logo-home" href="home.html">
+          <img class="logo" src="images/logo.png" alt="Logo Cryptaux" />
+        </a>
         <ul class="list-unstyled">
           <li><a href="home.html">Home</a></li>
           <li><a href="about-them.html">About them</a></li>
@@ -22,254 +27,308 @@
         </ul>
       </nav>
     </header>
-    <!-- Articles section-->
+
     <main>
-      <h1>HOT CRYPTO NEWS</h1>
-      <hr />
+      <div class="container-top-body-image">
+        <img
+          class="top-body-image"
+          style="height: 300px"
+          src="images/photo_home_top_body-forMobile.jpg"
+          alt="image of a man holding crypto-like coins"
+        />
+      </div>
 
-      <div class="articles">
-        <a href="#">
-          <article>
-            <img src="images/article1.jpg" alt="bitcoin image" />
-            <div class="article-content">
-              <h2>What Is Bitcoin?</h2>
-              <p>
-                Bitcoin is a cryptocurrency, a virtual currency designed to act
-                as money and a form of payment outside the control of any one
-                person, group, or entity, and thus removing the need for
-                third-party involvement in financial transactions.
-              </p>
-            </div>
-          </article>
-        </a>
-        <a href="#">
-          <article class="right-image">
-            <img src="images/article2.jpg" alt="bitcoin image" />
-            <div class="article-content">
-              <h2>What Is Cryptocurrency?</h2>
-              <p>
-                A cryptocurrency is a digital, encrypted, and decentralized
-                medium of exchange. Unlike the U.S. Dollar or the Euro, there is
-                no central authority that manages and maintains the value of a
-                cryptocurrency.
-              </p>
-            </div>
-          </article>
-        </a>
-        <a href="#">
-        <article>
-          <img src="images/article3.jpg" alt="bitcoin image" />
-          <div class="article-content">
-            <h2>The pros and cons of cryptocurrency !</h2>
-            <p>
-              The following statements do not constitute investment advice or
-              any other advice on financial services, financial instruments,
-              financial products, or digital assets.
+      <!-- ARTICLES SECTION -->
+
+      <section>
+        <div class="subtitle-container">
+          <h1>HOT CRYPTO NEWS</h1>
+          <div class="subtitle-line"></div>
+        </div>
+
+        <div class="articles">
+          <a href="#">
+            <article>
+              <img
+                class="images-articles"
+                src="images/article1.jpg"
+                alt="bitcoin image"
+              />
+              <div class="article-content">
+                <h2 class="article-title-h2">What Is Bitcoin?</h2>
+                <p class="text-article-p">
+                  Bitcoin is a cryptocurrency, a virtual currency designed to
+                  act as money and a form of payment outside the control of any
+                  one person, group, or entity, and thus removing the need for
+                  third-party involvement in financial transactions.
+                </p>
+              </div>
+            </article>
+          </a>
+
+          <a href="#">
+            <article class="right-image">
+              <img
+                class="images-articles"
+                src="images/article2.jpg"
+                alt="bitcoin image"
+              />
+              <div class="article-content">
+                <h2 class="article-title-h2">What Is Cryptocurrency?</h2>
+                <p class="text-article-p">
+                  A cryptocurrency is a digital, encrypted, and decentralized
+                  medium of exchange. Unlike the U.S. Dollar or the Euro, there
+                  is no central authority that manages and maintains the value
+                  of a cryptocurrency.
+                </p>
+              </div>
+            </article>
+          </a>
+
+          <a href="#">
+            <article>
+              <img
+                class="images-articles"
+                src="images/article3.jpg"
+                alt="bitcoin image"
+              />
+              <div class="article-content">
+                <h2 class="article-title-h2">
+                  The pros and cons of cryptocurrency !
+                </h2>
+                <p class="text-article-p">
+                  The following statements do not constitute investment advice
+                  or any other advice on financial services, financial
+                  instruments, financial products, or digital assets.
+                </p>
+              </div>
+            </article>
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <div class="subtitle-container">
+          <h1>MOST VIEWED IN 2022</h1>
+          <div class="subtitle-line"></div>
+        </div>
+
+        <div class="articles">
+          <a href="#">
+            <article>
+              <img
+                class="images-articles"
+                src="images/article4.jpg"
+                alt="bitcoin image"
+              />
+              <div class="article-content">
+                <h2 class="article-title-h2">PUBG Creator Introduces NFTs</h2>
+                <p class="text-article-p">
+                  PUBG creator Brendan Greene plans to launch a game powered by
+                  blockchain, NFTs, and the metaverse. The next game called
+                  Artemis will allow players to make and play anything they like
+                  in the Earth-sized virtual and open world environment.
+                </p>
+              </div>
+            </article>
+          </a>
+
+          <a href="#">
+            <article class="right-image">
+              <img
+                class="images-articles"
+                src="images/article5.jpg"
+                alt="world image"
+              />
+              <div class="article-content">
+                <h2 class="article-title-h2">
+                  The Crypto World Is on Edge After a String of Hacks
+                </h2>
+                <p class="text-article-p">
+                  A digital euro issued by the European Central Bank (ECB) “will
+                  not be used for commercial purposes,” according to Christine
+                  Lagarde, the central bank’s president.
+                </p>
+              </div>
+            </article>
+          </a>
+        </div>
+      </section>
+
+      <!-- LIVE CRYPTO SECTION -->
+      <section>
+        <div class="subtitle-container">
+          <h1>CRYPTO LIVE</h1>
+          <div class="subtitle-line"></div>
+        </div>
+
+        <div class="graph-container">
+          <div id="bitcoin-logo-on-graph" class="name-revealed-container">
+            <img
+              class="name-logo"
+              src="Assets/Home-page/Crypto-live/01_Bitcoin.png"
+              alt="Bitcoin logo"
+            />
+            <p>Bitcoin</p>
+          </div>
+          <div id="ethereum-logo-on-graph" class="name-unrevealed-container">
+            <img
+              class="name-logo"
+              src="Assets/Home-page/Crypto-live/02_Ethereum.png"
+              alt="Ethereum logo"
+            />
+            <p>Ethereum</p>
+          </div>
+          <div id="ripple-logo-on-graph" class="name-unrevealed-container">
+            <img
+              class="name-logo"
+              src="Assets/Home-page/Crypto-live/03_Ripple.png"
+              alt="Ripple logo"
+            />
+            <p>Ripple</p>
+          </div>
+          <div id="litecoin-logo-on-graph" class="name-unrevealed-container">
+            <img
+              class="name-logo"
+              src="Assets/Home-page/Crypto-live/04_Litecoin.png"
+              alt="Litecoin logo"
+            />
+            <p>Litecoin</p>
+          </div>
+          <div id="stellar-logo-on-graph" class="name-unrevealed-container">
+            <img
+              class="name-logo"
+              src="Assets/Home-page/Crypto-live/05_Stellar.png"
+              alt="Stellar logo"
+            />
+            <p>Stellar</p>
+          </div>
+          <div id="cardano-logo-on-graph" class="name-unrevealed-container">
+            <img
+              class="name-logo"
+              src="Assets/Home-page/Crypto-live/06_Cardano.png"
+              alt="Cardano logo"
+            />
+            <p>Cardano</p>
+          </div>
+          <div class="graph-images">
+            <img
+              id="bitcoin-image-graph"
+              class="image-selected-graph"
+              src="Assets/Home-page/Crypto-live/01_graph_bitcoin.png"
+              alt="Graphic of Bitcoin evolution"
+            />
+            <img
+              id="ethereum-image-graph"
+              class="image-unselected-graph"
+              src="Assets/Home-page/Crypto-live/02_graph_ethereum.png"
+              alt="Graphic of Ethereum evolution"
+            />
+            <img
+              id="ripple-image-graph"
+              class="image-unselected-graph"
+              src="Assets/Home-page/Crypto-live/03_graph_rippple.png"
+              alt="Graphic of Ripple evolution"
+            />
+            <img
+              id="litecoin-image-graph"
+              class="image-unselected-graph"
+              src="Assets/Home-page/Crypto-live/04_graph_litecoin.png"
+              alt="Graphic of Litecoin evolution"
+            />
+            <img
+              id="stellar-image-graph"
+              class="image-unselected-graph"
+              src="Assets/Home-page/Crypto-live/05_graph_stellar.png"
+              alt="Graphic of Stellar evolution"
+            />
+            <img
+              id="cardano-image-graph"
+              class="image-unselected-graph"
+              src="Assets/Home-page/Crypto-live/06_graph_cardano.png"
+              alt="Graphic of Cardano evolution"
+            />
+          </div>
+        </div>
+
+        <div class="cryptos-grid">
+          <div id="bitcoin-container-click" class="crypto-bloc-selected">
+            <img
+              src="Assets/Home-page/Crypto-live/01_Bitcoin.png"
+              alt="Bitcoin logo"
+            />
+            <p id="bitcoin-color-value" class="selected-evolution">
+              + 4,02<span> %</span>
             </p>
           </div>
-        </article>
-      </div>
-    </a>
-
-      <h1>MOST VIEWED IN 2022</h1>
-      <hr />
-
-      <div class="articles">
-        <a href="#">
-        <article>
-          <img src="images/article4.jpg" alt="bitcoin image" />
-          <div class="article-content">
-            <h2>PUBG Creator Introduces NFTs</h2>
-            <p>
-              PUBG creator Brendan Greene plans to launch a game powered by
-              blockchain, NFTs, and the metaverse. The next game called Artemis
-              will allow players to make and play anything they like in the
-              Earth-sized virtual and open world environment.
+          <div id="ethereum-container-click" class="crypto-bloc-unselected">
+            <img
+              src="Assets/Home-page/Crypto-live/02_Ethereum.png"
+              alt="Ethereum logo"
+            />
+            <p id="ethereum-color-value" class="positive-evolution">
+              + 4,02<span> %</span>
             </p>
           </div>
-        </article>
-      </a>
-        <a href="#">
-        <article class="right-image">
-          <img src="images/article5.jpg" alt="world image" />
-          <div class="article-content">
-            <h2>The Crypto World Is on Edge After a String of Hacks</h2>
-            <p>
-              A digital euro issued by the European Central Bank (ECB) “will not
-              be used for commercial purposes,” according to Christine Lagarde,
-              the central bank’s president.
+          <div id="ripple-container-click" class="crypto-bloc-unselected">
+            <img
+              src="Assets/Home-page/Crypto-live/03_Ripple.png"
+              alt="Ripple logo"
+            />
+            <p id="ripple-color-value" class="negative-evolution">
+              - 4,02<span> %</span>
             </p>
           </div>
-        </article>
-      </a>
-      </div>
-    <section>
-      <div class="subtitle-container">
-        <h1>CRYPTO LIVE</h1>
-        <div class="subtitle-line"></div>
-      </div>
+          <div id="litecoin-container-click" class="crypto-bloc-unselected">
+            <img
+              src="Assets/Home-page/Crypto-live/04_Litecoin.png"
+              alt="Litecoin logo"
+            />
+            <p id="litecoin-color-value" class="negative-evolution">
+              - 4,02<span> %</span>
+            </p>
+          </div>
+          <div id="stellar-container-click" class="crypto-bloc-unselected">
+            <img
+              src="Assets/Home-page/Crypto-live/05_Stellar.png"
+              alt="Stellar logo"
+            />
+            <p id="stellar-color-value" class="negative-evolution">
+              - 4,02<span> %</span>
+            </p>
+          </div>
+          <div id="cardano-container-click" class="crypto-bloc-unselected">
+            <img
+              src="Assets/Home-page/Crypto-live/06_Cardano.png"
+              alt="Cardano logo"
+            />
+            <p id="cardano-color-value" class="positive-evolution">
+              + 4,02<span> %</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
 
-      <div class="graph-container">
-        <div id="bitcoin-logo-on-graph" class="name-revealed-container">
-          <img
-            class="name-logo"
-            src="Assets/Home-page/Crypto-live/01_Bitcoin.png"
-            alt="Bitcoin logo"
-          />
-          <p>Bitcoin</p>
-        </div>
-        <div id="ethereum-logo-on-graph" class="name-unrevealed-container">
-          <img
-            class="name-logo"
-            src="Assets/Home-page/Crypto-live/02_Ethereum.png"
-            alt="Ethereum logo"
-          />
-          <p>Ethereum</p>
-        </div>
-        <div id="ripple-logo-on-graph" class="name-unrevealed-container">
-          <img
-            class="name-logo"
-            src="Assets/Home-page/Crypto-live/03_Ripple.png"
-            alt="Ripple logo"
-          />
-          <p>Ripple</p>
-        </div>
-        <div id="litecoin-logo-on-graph" class="name-unrevealed-container">
-          <img
-            class="name-logo"
-            src="Assets/Home-page/Crypto-live/04_Litecoin.png"
-            alt="Litecoin logo"
-          />
-          <p>Litecoin</p>
-        </div>
-        <div id="stellar-logo-on-graph" class="name-unrevealed-container">
-          <img
-            class="name-logo"
-            src="Assets/Home-page/Crypto-live/05_Stellar.png"
-            alt="Stellar logo"
-          />
-          <p>Stellar</p>
-        </div>
-        <div id="cardano-logo-on-graph" class="name-unrevealed-container">
-          <img
-            class="name-logo"
-            src="Assets/Home-page/Crypto-live/06_Cardano.png"
-            alt="Cardano logo"
-          />
-          <p>Cardano</p>
-        </div>
-        <div class="graph-images">
-          <img
-            id="bitcoin-image-graph"
-            class="image-selected-graph"
-            src="Assets/Home-page/Crypto-live/01_graph_bitcoin.png"
-            alt="Graphic of Bitcoin evolution"
-          />
-          <img
-            id="ethereum-image-graph"
-            class="image-unselected-graph"
-            src="Assets/Home-page/Crypto-live/02_graph_ethereum.png"
-            alt="Graphic of Ethereum evolution"
-          />
-          <img
-            id="ripple-image-graph"
-            class="image-unselected-graph"
-            src="Assets/Home-page/Crypto-live/03_graph_rippple.png"
-            alt="Graphic of Ripple evolution"
-          />
-          <img
-            id="litecoin-image-graph"
-            class="image-unselected-graph"
-            src="Assets/Home-page/Crypto-live/04_graph_litecoin.png"
-            alt="Graphic of Litecoin evolution"
-          />
-          <img
-            id="stellar-image-graph"
-            class="image-unselected-graph"
-            src="Assets/Home-page/Crypto-live/05_graph_stellar.png"
-            alt="Graphic of Stellar evolution"
-          />
-          <img
-            id="cardano-image-graph"
-            class="image-unselected-graph"
-            src="Assets/Home-page/Crypto-live/06_graph_cardano.png"
-            alt="Graphic of Cardano evolution"
-          />
-        </div>
-      </div>
-
-      <div class="cryptos-grid">
-        <div id="bitcoin-container-click" class="crypto-bloc-selected">
-          <img
-            src="Assets/Home-page/Crypto-live/01_Bitcoin.png"
-            alt="Bitcoin logo"
-          />
-          <p id="bitcoin-color-value" class="selected-evolution">
-            + 4,02<span> %</span>
-          </p>
-        </div>
-        <div id="ethereum-container-click" class="crypto-bloc-unselected">
-          <img
-            src="Assets/Home-page/Crypto-live/02_Ethereum.png"
-            alt="Ethereum logo"
-          />
-          <p id="ethereum-color-value" class="positive-evolution">
-            + 4,02<span> %</span>
-          </p>
-        </div>
-        <div id="ripple-container-click" class="crypto-bloc-unselected">
-          <img
-            src="Assets/Home-page/Crypto-live/03_Ripple.png"
-            alt="Ripple logo"
-          />
-          <p id="ripple-color-value" class="negative-evolution">
-            - 4,02<span> %</span>
-          </p>
-        </div>
-        <div id="litecoin-container-click" class="crypto-bloc-unselected">
-          <img
-            src="Assets/Home-page/Crypto-live/04_Litecoin.png"
-            alt="Litecoin logo"
-          />
-          <p id="litecoin-color-value" class="negative-evolution">
-            - 4,02<span> %</span>
-          </p>
-        </div>
-        <div id="stellar-container-click" class="crypto-bloc-unselected">
-          <img
-            src="Assets/Home-page/Crypto-live/05_Stellar.png"
-            alt="Stellar logo"
-          />
-          <p id="stellar-color-value" class="negative-evolution">
-            - 4,02<span> %</span>
-          </p>
-        </div>
-        <div id="cardano-container-click" class="crypto-bloc-unselected">
-          <img
-            src="Assets/Home-page/Crypto-live/06_Cardano.png"
-            alt="Cardano logo"
-          />
-          <p id="cardano-color-value" class="positive-evolution">
-            + 4,02<span> %</span>
-          </p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-
-  
+    <!-- FOOTER SECTION -->
     <footer>
-      <div>
-        <h1>NEWSLETTER</h1>
-        <hr />
-      </div>
+      <div class="container-all-newsletter">
+        <div class="subtitle-container" id="subtitle-container-footer">
+          <h1>NEWSLETTER</h1>
+          <div class="subtitle-line" id="subtitle-line-footer"></div>
+        </div>
 
-      <div>
-        <p>Don’t miss a thing about crypto ! Subscribe to our newsletter</p>
+        <p>
+          Don’t miss a thing about crypto !<br />Subscribe to our newsletter
+        </p>
 
-        <div class="input">
-          <input class="email-footer" id="emailAddress" type="email" />
+        <div class="container-input-footer">
+          <input
+            class="email-footer"
+            id="emailAddress"
+            type="email"
+            placeholder="email"
+          />
           <input
             class="click-footer"
             id="button"
@@ -278,6 +337,7 @@
           />
         </div>
       </div>
+
       <div class="legacy">
         <ul>
           <li>Mentions légales</li>
@@ -287,6 +347,6 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="home.js"></script>
   </body>
 </html>

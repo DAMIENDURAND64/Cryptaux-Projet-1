@@ -10,15 +10,6 @@ link.addEventListener("click", function (def) {
   ul.classList.toggle("open");
 });
 
-// Contact them
-
-// const button = document.getElementById("buttonSend");
-
-// button.addEventListener("click", function () {
-//   const name = document.getElementById("inputName");
-//   const yourName = name.value;
-//   alert(`Hey ${yourName}, we will get back to you shortly !!!`);
-// });
 // Declaration variables
 
 let displayBitcoin = document.getElementById("bitcoin-container-click");
