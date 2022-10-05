@@ -11,3 +11,12 @@ link.addEventListener("click", function (def) {
 });
 
 // Carousel about them
+
+// FOOTER
+
+const buttonSubscribe = document.getElementById("buttonSubscribe");
+
+buttonSubscribe.addEventListener("click", function () {
+  alert("Congrats you subscribe !!!");
+});
+console.log(buttonSubscribe);
