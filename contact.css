@@ -45,6 +45,7 @@ main {
 
 .input-name,
 .input-email,
+.inputReturn,
 select,
 textarea {
   width: 100%;
@@ -55,7 +56,6 @@ textarea {
   background: radial-gradient(#ffffff, lightgrey);
   z-index: 1;
 }
-
 .messageThem {
   height: 75px;
   max-width: 100%;
