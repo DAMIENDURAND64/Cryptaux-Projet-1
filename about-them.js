@@ -19,4 +19,3 @@ const buttonSubscribe = document.getElementById("buttonSubscribe");
 buttonSubscribe.addEventListener("click", function () {
   alert("Congrats you subscribe !!!");
 });
-console.log(buttonSubscribe);
