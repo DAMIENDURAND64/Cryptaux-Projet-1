@@ -5,14 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="about-them.css" />
+    <link rel="stylesheet" href="style/style-generic.css" />
     <title>Document</title>
   </head>
   <body>
+    <!-- HEADER SECTION -->
+    <header>
+      <nav>
+        <div class="burger-container">
+          <a id="link" href="home.html"><span id="burger"></span></a>
+        </div>
+        <a id="logo-home" href="home.html">
+          <img class="logo" src="images/logo.png" alt="Logo Cryptaux" />
+        </a>
+        <ul class="list-unstyled">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about-them.html">About them</a></li>
+          <li><a href="contact-them.html">Contact them</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    
+    <div class="container-top-body-image">
+      <img
+        class="top-body-image"
+        style="height: 300px"
+        src="images/photo_about_top_body-forMobile.png"
+        alt="image of a man holding crypto-like coins"
+      />
+    </div>
+    <div class="subtitle-container">
+      <h1>CONTACT THEM</h1>
+      <div class="subtitle-line"></div>
+    </div>
+
     <div class="container">
-      <h1>ABOUT THEM</h1>
-      <hr>
       <input type="radio" name="slider" id="item-1" checked />
       <input type="radio" name="slider" id="item-2" />
       <input type="radio" name="slider" id="item-3" />
@@ -43,44 +70,103 @@
             <label class="song-info" id="song-info-1">
               <div class="title">Damien Durand</div>
               <div class="sub-line">
-                <class class="subtitle">
-                  Après un périple à travers le monde et de nombreuses missions humanitaires, ce bouddhiste se passionne pour la spéculation des crypto-monnaies. <br><br>
-
-            
+                <div class="subtitle">
+                  <br />
+                  Après un périple à travers le monde et de nombreuses missions
+                  humanitaires, ce bouddhiste se passionne pour la spéculation
+                  des crypto-monnaies. <br /><br />
+                </div>
               </div>
             </label>
             <label class="song-info" id="song-info-2">
               <div class="title">John Baruteau</div>
               <div class="sub-line">
                 <div class="subtitle">
-                  Ce génie autodidacte a été le premier à inventer le crypto-minage écologique : un vélo, des dynamos et 100 serveurs interconnectés.  <br><br>
-              </div>
+                  <br />
+                  Ce génie autodidacte a été le premier à inventer le
+                  crypto-minage écologique : un vélo, des dynamos et 100
+                  serveurs interconnectés. <br /><br />
+                </div>
               </div>
             </label>
             <label class="song-info" id="song-info-3">
               <div class="title">Maxime Belin</div>
               <div class="sub-line">
                 <div class="subtitle">
-                  Tombé dans la crypto par erreur en pensant télécharger un nouveau jeu, il est aujourd'hui dans le top 3 des crypteurs influents selon "Crypto-mag". <br><br>
+                  <br />
+                  Tombé dans la crypto par erreur en pensant télécharger un
+                  nouveau jeu, il est aujourd'hui dans le top 3 des crypteurs
+                  influents selon "Crypto-mag". <br /><br />
                 </div>
               </div>
             </label>
             <label class="song-info" id="song-info-3">
-                <div class="title">Simon Perdriaud</div>
-                <div class="sub-line">
-                  <div class="subtitle">Il pense crypto, dort crypto, mange crypto... Il a un 6eme sens qui lui permet de détecter le centre de crypto-minage le plus proche. <br><br>
-                  </div>
+              <div class="title">Simon Perdriaud</div>
+              <div class="sub-line">
+                <div class="subtitle">
+                  <br />
+                  Il pense crypto, dort crypto, mange crypto... Il a un 6eme
+                  sens qui lui permet de détecter le centre de crypto-minage le
+                  plus proche. <br /><br />
                 </div>
-              </label>
-              <label class="song-info" id="song-info-3">
-                <div class="title">Thomas Legendarme</div>
-                <div class="sub-line">
-                  <div class="subtitle">Par un jour de grand froid, il se réfugie dans une centre de crypto-minage. La sympathie de l'équipe et la chaleur de la pièce en font maintenant un amoureux des cryptos.</div>
+              </div>
+            </label>
+            <label class="song-info" id="song-info-3">
+              <div class="title">Thomas Legendarme</div>
+              <div class="sub-line">
+                <div class="subtitle">
+                  <br />
+                  Par un jour de grand froid, il se réfugie dans une centre de
+                  crypto-minage. La sympathie de l'équipe et la chaleur de la
+                  pièce en font maintenant un amoureux des cryptos.
                 </div>
-              </label>
+              </div>
+            </label>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- FOOTER SECTION -->
+
+    <footer>
+      <div class="container-all-newsletter">
+        <div class="subtitle-container" id="subtitle-container-footer">
+          <h1>NEWSLETTER</h1>
+          <div class="subtitle-line" id="subtitle-line-footer"></div>
+        </div>
+
+        <p>
+          Don’t miss a thing about crypto !<br />Subscribe to our newsletter
+        </p>
+
+        <div class="container-input-footer">
+          <input
+            class="email-footer"
+            id="emailAddress"
+            type="email"
+            placeholder="email"
+          />
+
+          <button
+            class="click-footer"
+            id="buttonSubscribe"
+            type="submit"
+            value="Subscribe"
+          >
+            subscribe
+          </button>
+        </div>
+      </div>
+      <div class="legacy">
+        <ul>
+          <li>Mentions légales</li>
+          <li>CGU</li>
+          <li>SMDJT - 2022</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="contact-them.js"></script>
   </body>
 </html>
