@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/style-generic.css" />
-    <link rel="stylesheet" href="style/contact.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Them</title>
+</head>
 
-    <title>Contact them</title>
-  </head>
-
-  <body>
+<body>
     <!-- HEADER SECTION -->
     <header>
       <nav>
@@ -28,31 +28,16 @@
       </nav>
     </header>
 
-    <main>
-      <div class="container-top-body-image">
-        <img
-          class="top-body-image"
-          style="height:220px; margin-bottom:30px"
-          src="images/photo_contact_top_body-forMobile.png"
-          alt="image of a hand touching a tablet"
-        />
-      </div>
-
-      <!-- CONTACT SECTION -->
-
-      <section>
-        <div class="subtitle-container">
-            <h1>CONTACT THEM</h1>
-            <div class="subtitle-line"></div>
-          </div>
-
+    <main class="main-contactThem">
+        <h1 class="h1-contactThem">CONTACT THEM</h1>
+        <hr class="hr-contactThem">
         <div class="form">
             <p class="p-contactThem">Name</p>
-            <input type="text" class="input-name" placeholder="Your name" id="inputName"><br><br>
+            <input type="text" class="input-name" placeholder="Your name" id="inputName" class="inputReturn"><br><br>
             <p class="p-contactThem">Email</p>
-            <input type="mail" class="input-email" placeholder="Enter your email here ..."></input><br><br>
+            <input type="mail" class="input-email" id="inputEmail" placeholder="Enter your email here ..."class="inputReturn"></input><br><br>
             <p class="p-contactThem">Choose your Topic</p>
-            <select class="select-tipo">
+            <select class="select-tipo" id="chooseTopic" class="inputReturn">
                 <option></option>
                 <option> Report bugs
                 <option> About currency
@@ -61,50 +46,47 @@
                 <option> Something else ?
             </select><br><br>
             <p class="p-contactThem">Message</p>
-            <textarea class="messageThem" placeholder="Write your message here ..."></textarea>
-    
-            <button class="button-send-contact" id="buttonSend">Send</button>
+            <textarea class="messageThem" placeholder="Write your message here ..." id="inputMessage" class="inputReturn" ></textarea>
+            <div>
+                <button class="button-send-contact" id="buttonSend">Send</button><br><br>
+            </div>
         </div>
-      </section>
     </main>
-
-    <!-- FOOTER SECTION -->
-    <footer>
-      <div class="container-all-newsletter">
-        <div class="subtitle-container" id="subtitle-container-footer">
-          <h1>NEWSLETTER</h1>
-          <div class="subtitle-line" id="subtitle-line-footer"></div>
+        <!-- FOOTER SECTION -->
+        <footer>
+          <div class="container-all-newsletter">
+            <div class="subtitle-container" id="subtitle-container-footer">
+              <h1>NEWSLETTER</h1>
+              <div class="subtitle-line" id="subtitle-line-footer"></div>
+            </div>
+    
+            <p>
+              Don’t miss a thing about crypto !<br />Subscribe to our newsletter
+            </p>
+    
+            <div class="container-input-footer">
+              <input
+                class="email-footer"
+                id="emailAddress"
+                type="email"
+                placeholder="email"
+              />
+              <input
+                class="click-footer"
+                id="button"
+                type="submit"
+                value="Subscribe"
+              />
+            </div>
+          </div>
+    
+          <div class="legacy">
+            <ul>
+              <li>Mentions légales</li>
+              <li>CGU</li>
+              <li>SMDJT - 2022</li>
+            </ul>
         </div>
-
-        <p>
-          Don’t miss a thing about crypto !<br />Subscribe to our newsletter
-        </p>
-
-        <div class="container-input-footer">
-          <input
-            class="email-footer"
-            id="emailAddress"
-            type="email"
-            placeholder="email"
-          />
-          <input
-            class="click-footer"
-            id="button"
-            type="submit"
-            value="Subscribe"
-          />
-        </div>
-      </div>
-
-      <div class="legacy">
-        <ul>
-          <li>Mentions légales</li>
-          <li>CGU</li>
-          <li>SMDJT - 2022</li>
-        </ul>
-      </div>
     </footer>
-
-    <script src="contact-them.js"></script>
-  </body>
-</html>
+    <script src="/contact.js"></script>
+</body>
