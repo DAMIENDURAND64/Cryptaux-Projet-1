@@ -20,6 +20,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 header {
@@ -47,14 +49,24 @@ footer {
 
 /* Header */
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 25px 0 35px;
+header {
   background-color: #35a18b;
   width: 100%;
   height: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.drawer-menu {
+  margin-top: 120px;
+  background-color: #35a18b;
+  width: 70%;
+  height: 100vh;
+  z-index: 99;
+  position: fixed;
+  left: 0%;
+  transform: scaleY(0);
 }
 
 .logo {
@@ -123,29 +135,20 @@ nav {
   top: 13px;
 }
 
-header {
-  width: 100%;
-}
-
-header ul {
-  background: #007860;
+.drawer-menu ul {
   position: absolute;
-  width: 280px;
-  height: 100vh;
-  left: 0;
-  top: 120px;
-  opacity: 95%;
-  padding: 10px 0;
-  transform: scaleY(0);
-  transform-origin: left top;
-  transition: all 0.5s ease;
+  width: 100%;
+  height: 100%;
 }
 
-ul.open {
+.open-drawer {
+  transform: translateX(-100%);
+  transition: transform 330ms ease-in-out;
   transform: scaleY(1);
+  opacity: 90%;
 }
 
-header li {
+.drawer-menu li {
   padding: 40px 10px 40px 35px;
   font-size: 28px;
   font-weight: 700;
@@ -156,14 +159,49 @@ a {
   color: white;
 }
 
+.classic {
+  display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .burger-container,
+  #burger,
+  #burger::before,
+  #burger::after {
+    display: none;
+  }
+  .drawer-menu {
+    display: none;
+  }
+  header {
+    height: 90px;
+  }
+  header nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .classic {
+    display: flex;
+  }
+  .classic {
+    font-size: 30px;
+    list-style-type: none;
+  }
+  .classic li {
+    margin: 0 35px;
+  }
+}
+
 /* Photo top body */
 
 .container-top-body-image {
   width: 100%;
   height: auto;
-  overflow: hidden;
   display: flex;
   justify-content: center;
+  margin-top: 0px;
 }
 
 .top-body-image {
@@ -185,6 +223,7 @@ h1 {
   font-weight: 400;
   font-size: 28px;
   text-align: center;
+  white-space: nowrap;
   margin-bottom: 10px;
 }
 
@@ -196,6 +235,11 @@ h1 {
 }
 
 /* footer */
+
+.only-for-fix-about {
+  position: absolute;
+  top: 1200px;
+}
 
 footer {
   display: flex;
@@ -278,6 +322,7 @@ footer li {
   footer {
     height: 340px;
   }
+
   .container-nl-dekstop {
     display: flex;
     justify-content: center;
@@ -285,12 +330,9 @@ footer li {
   }
   .container-input-footer {
     width: 45%;
-  
-  
   }
   .container-nl-dekstop p {
     margin-right: 40px;
-    
   }
 
   .email-footer {
@@ -311,7 +353,6 @@ footer li {
     font-size: 28px;
     flex-direction: row column;
     text-align: center;
-  
   }
   .linkNavbar li {
     font-size: 18px;

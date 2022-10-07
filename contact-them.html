@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style-generic.css" />
-    <link rel="stylesheet" href="style/contact.css" />
+    <link rel="stylesheet" href="style/contact.css">
+    <title>Contact Them</title>
+</head>
 
-    <title>Contact them</title>
-  </head>
+<body>
+  <nav class="drawer-menu">
+    <ul class="list-unstyled">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about-them.html">About them</a></li>
+      <li><a href="contact-them.html">Contact them</a></li>
+    </ul>
+  </nav>
 
-  <body>
-    <!-- HEADER SECTION -->
-    <header>
-      <nav>
-        <div class="burger-container">
-          <a id="link" href="home.html"><span id="burger"></span></a>
-        </div>
-        <a id="logo-home" href="home.html">
-          <img class="logo" src="images/logo.png" alt="Logo Cryptaux" />
-        </a>
-        <ul class="list-unstyled">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about-them.html">About them</a></li>
-          <li><a href="contact-them.html">Contact them</a></li>
-        </ul>
-      </nav>
-    </header>
+  <!-- HEADER SECTION -->
+  <header>
+    <div class="burger-container">
+      <a id="link" href="index.html"><span id="burger"></span></a>
+    </div>
+    <nav>
+      <a id="logo-home" href="index.html">
+        <img class="logo" src="images/logo.png" alt="Logo Cryptaux" />
+      </a>
+      <ul class="classic">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about-them.html">ABOUT THEM</a></li>
+        <li><a href="contact-them.html">CONTACT THEM</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-      <div class="container-top-body-image">
-        <img
-          class="top-body-image"
-          style="height:220px; margin-bottom:30px"
-          src="images/photo_contact_top_body-forMobile.png"
-          alt="image of a hand touching a tablet"
-        />
-      </div>
+  <main>
+    <div class="container-top-body-image">
+      <img
+        class="top-body-image"
+        style="height:180px; margin-bottom:30px"
+        src="images/photo_contact_top_body-forMobile.png"
+        alt="image of a hand touching a tablet"
+      />
+    </div>
 
       <!-- CONTACT SECTION -->
 
@@ -45,28 +53,32 @@
             <h1>CONTACT THEM</h1>
             <div class="subtitle-line"></div>
           </div>
-
-        <div class="form">
-            <p class="p-contactThem">Name</p>
-            <input type="text" class="input-name" placeholder="Your name" id="inputName"><br><br>
-            <p class="p-contactThem">Email</p>
-            <input type="mail" class="input-email" placeholder="Enter your email here ..."></input><br><br>
-            <p class="p-contactThem">Choose your Topic</p>
-            <select class="select-tipo">
-                <option></option>
-                <option> Report bugs
-                <option> About currency
-                <option> Ask them something
-                <option> New subject to work on
-                <option> Something else ?
-            </select><br><br>
-            <p class="p-contactThem">Message</p>
-            <textarea class="messageThem" placeholder="Write your message here ..."></textarea>
-    
-            <button class="button-send-contact" id="buttonSend">Send</button>
-        </div>
+        <div class="contactDesktop">
+          <div class="form">
+              <p class="p-contactThem">Name</p>
+              <input type="text" class="input-name" placeholder="Your name" id="inputName" class="inputResponsive" ><br><br>
+              <p class="p-contactThem">Email</p>
+              <input type="mail" class="input-email" placeholder="Enter your email here ..." id="inputEmail"></input><br><br>
+              <p class="p-contactThem">Choose your Topic</p>
+              <select class="select-tipo" id="chooseTopic">
+                  <option></option>
+                  <option> Report bugs
+                  <option> About currency
+                  <option> Ask them something
+                  <option> New subject to work on
+                  <option> Something else ?
+              </select><br><br>
+              <p class="p-contactThem">Message</p>
+              <div>
+              <textarea class="messageThem" placeholder="Write your message here ..." id="inputMessage" ></textarea>
+      
+              <button class="button-send-contact" id="buttonSend">Send</button>
+            </div>
+          </div>
+      </div>
       </section>
     </main>
+
 
     <!-- FOOTER SECTION -->
     <footer>
@@ -75,27 +87,37 @@
           <h1>NEWSLETTER</h1>
           <div class="subtitle-line" id="subtitle-line-footer"></div>
         </div>
+        <div class="container-nl-dekstop">
+          <p>
+            Don’t miss a thing about crypto !<br />Subscribe to our newsletter
+          </p>
 
-        <p>
-          Don’t miss a thing about crypto !<br />Subscribe to our newsletter
-        </p>
+          <div class="container-input-footer">
+            <input
+              class="email-footer"
+              id="emailAddress"
+              type="email"
+              placeholder="Please enter your email..."
+            />
 
-        <div class="container-input-footer">
-          <input
-            class="email-footer"
-            id="emailAddress"
-            type="email"
-            placeholder="email"
-          />
-          <input
-            class="click-footer"
-            id="button"
-            type="submit"
-            value="Subscribe"
-          />
+            <button
+              class="click-footer"
+              id="buttonSubscribe"
+              type="submit"
+              value="Subscribe"
+            >
+              subscribe
+            </button>
+          </div>
         </div>
       </div>
-
+      <div class="linkNavbar">
+        <ul>
+          <li><a href="/index.html">HOME</a></li>
+          <li><a href="/about-them.html">ABOUT THEM</a></li>
+          <li><a href="/contact-them.html">CONTACT US</a></li>
+        </ul>
+      </div>
       <div class="legacy">
         <ul>
           <li>Mentions légales</li>
@@ -105,6 +127,5 @@
       </div>
     </footer>
 
-    <script src="contact-them.js"></script>
-  </body>
-</html>
+    <script src="/contact-them.js"></script>
+</body>

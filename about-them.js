@@ -2,21 +2,25 @@
 
 let link = document.getElementById("link");
 let burger = document.getElementById("burger");
-let ul = document.querySelector("ul");
+let drawer = document.querySelector(".drawer-menu");
 
 link.addEventListener("click", function (def) {
   def.preventDefault();
   burger.classList.toggle("open");
-  ul.classList.toggle("open");
+  drawer.classList.toggle("open-drawer");
 });
 
-// Carousel about them
+// Carousel ABOUT THEM
 
-// FOOTER
+// // FOOTER
 
 const buttonSubscribe = document.getElementById("buttonSubscribe");
+const emailAddress = document.getElementById("emailAddress");
 
 buttonSubscribe.addEventListener("click", function () {
-  alert("Congrats you subscribe !!!");
+  if (emailAddress.value) {
+    return alert("Congrats you subscribe !!!");
+  }
+
+  return alert("Sorry is not a valid adress ...");
 });
-console.log(buttonSubscribe);

@@ -2,15 +2,15 @@
 
 let link = document.getElementById("link");
 let burger = document.getElementById("burger");
-let drawer = document.querySelector(".drawer-menu");
+let ul = document.querySelector("ul");
 
 link.addEventListener("click", function (def) {
   def.preventDefault();
   burger.classList.toggle("open");
-  drawer.classList.toggle("open-drawer");
+  ul.classList.toggle("open");
 });
 
-// CONTACT THEM
+// Contact them
 
 const button = document.getElementById("buttonSend");
 const inputEmail = document.getElementById("inputEmail");
@@ -57,7 +57,7 @@ button.addEventListener("click", function () {
   return;
 });
 
-// FOOTER
+// // FOOTER
 
 const buttonSubscribe = document.getElementById("buttonSubscribe");
 const emailAddress = document.getElementById("emailAddress");
