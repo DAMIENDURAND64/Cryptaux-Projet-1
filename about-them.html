@@ -4,83 +4,187 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="about-them.css" />
+    <link rel="stylesheet" href="style/about-them.css" />
+    <link rel="stylesheet" href="style/style-generic.css" />
     <title>Document</title>
   </head>
+
   <body>
+    <nav class="drawer-menu">
+      <ul class="list-unstyled">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-them.html">About them</a></li>
+        <li><a href="contact-them.html">Contact them</a></li>
+      </ul>
+    </nav>
 
-    
-    <div class="container">
-      <h1>ABOUT THEM</h1>
-      <hr>
-      <input type="radio" name="slider" id="item-1" checked />
-      <input type="radio" name="slider" id="item-2" />
-      <input type="radio" name="slider" id="item-3" />
-      <input type="radio" name="slider" id="item-4" />
-      <input type="radio" name="slider" id="item-5" />
+    <!-- HEADER SECTION -->
+    <header>
+      <div class="burger-container">
+        <a id="link" href="index.html"><span id="burger"></span></a>
+      </div>
+      <nav>
+        <a id="logo-home" href="index.html">
+          <img class="logo" src="images/logo.png" alt="Logo Cryptaux" />
+        </a>
+        <ul class="classic">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about-them.html">ABOUT THEM</a></li>
+          <li><a href="contact-them.html">CONTACT THEM</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <div class="cards">
-        <label class="card" for="item-1" id="picture-1">
-          <img src="images/dams.JPG" alt="Damien's picture" />
-        </label>
-        <label class="card" for="item-2" id="picture-2">
-          <img src="images/john.JPG" alt="John's picture" />
-        </label>
-        <label class="card" for="item-3" id="picture-3">
-          <img src="images/max.JPG" alt="Maxime's picture" />
-        </label>
-        <label class="card" for="item-4" id="picture-4">
-          <img src="images/simon.JPG" alt="Simon's picture" />
-        </label>
-        <label class="card" for="item-5" id="picture-5">
-          <img src="images/tom.JPG" alt="Thomas's picture" />
-        </label>
+    <main>
+      <div class="container-top-body-image">
+        <img
+          class="top-body-image"
+          style="height: 180px"
+          src="images/photo_about_top_body-forMobile.png"
+          alt="image of a man holding crypto-like coins"
+        />
+      </div>
+      <div class="subtitle-container">
+        <h1>ABOUT THEM</h1>
+        <div class="subtitle-line"></div>
       </div>
 
-      <div class="player">
-        <div class="upper-part">
-          <div class="info-area" id="test">
-            <label class="song-info" id="song-info-1">
-              <div class="title">Damien Durand</div>
-              <div class="sub-line">
-                <class class="subtitle">
-                  Après un périple à travers le monde et de nombreuses missions humanitaires, ce bouddhiste se passionne pour la spéculation des crypto-monnaies. <br><br>
+      <div class="container">
+        <input type="radio" name="slider" id="item-1" checked />
+        <input type="radio" name="slider" id="item-2" />
+        <input type="radio" name="slider" id="item-3" />
+        <input type="radio" name="slider" id="item-4" />
+        <input type="radio" name="slider" id="item-5" />
 
-            
-              </div>
-            </label>
-            <label class="song-info" id="song-info-2">
-              <div class="title">John Baruteau</div>
-              <div class="sub-line">
-                <div class="subtitle">
-                  Ce génie autodidacte a été le premier à inventer le crypto-minage écologique : un vélo, des dynamos et 100 serveurs interconnectés.  <br><br>
-              </div>
-              </div>
-            </label>
-            <label class="song-info" id="song-info-3">
-              <div class="title">Maxime Belin</div>
-              <div class="sub-line">
-                <div class="subtitle">
-                  Tombé dans la crypto par erreur en pensant télécharger un nouveau jeu, il est aujourd'hui dans le top 3 des crypteurs influents selon "Crypto-mag". <br><br>
+        <div class="cards">
+          <label class="card" for="item-1" id="picture-1">
+            <img src="images/dams.JPG" alt="Damien's picture" />
+          </label>
+          <label class="card" for="item-2" id="picture-2">
+            <img src="images/john.JPG" alt="John's picture" />
+          </label>
+          <label class="card" for="item-3" id="picture-3">
+            <img src="images/max.JPG" alt="Maxime's picture" />
+          </label>
+          <label class="card" for="item-4" id="picture-4">
+            <img src="images/simon.JPG" alt="Simon's picture" />
+          </label>
+          <label class="card" for="item-5" id="picture-5">
+            <img src="images/tom.JPG" alt="Thomas's picture" />
+          </label>
+        </div>
+
+        <div class="player">
+          <div class="upper-part">
+            <div class="info-area" id="test">
+              <label class="song-info" id="song-info-1">
+                <div class="title">Damien Durand</div>
+                <div class="sub-line">
+                  <div class="subtitle">
+                    <br />
+                    Après un périple à travers le monde et de nombreuses
+                    missions humanitaires, ce bouddhiste se passionne pour la
+                    spéculation des crypto-monnaies. <br /><br />
+                  </div>
                 </div>
-              </div>
-            </label>
-            <label class="song-info" id="song-info-3">
+              </label>
+              <label class="song-info" id="song-info-2">
+                <div class="title">John Baruteau</div>
+                <div class="sub-line">
+                  <div class="subtitle">
+                    <br />
+                    Ce génie autodidacte a été le premier à inventer le
+                    crypto-minage écologique : un vélo, des dynamos et 100
+                    serveurs interconnectés. <br /><br />
+                  </div>
+                </div>
+              </label>
+              <label class="song-info" id="song-info-3">
+                <div class="title">Maxime Belin</div>
+                <div class="sub-line">
+                  <div class="subtitle">
+                    <br />
+                    Tombé dans la crypto par erreur en pensant télécharger un
+                    nouveau jeu, il est aujourd'hui dans le top 3 des crypteurs
+                    influents selon "Crypto-mag". <br /><br />
+                  </div>
+                </div>
+              </label>
+              <label class="song-info" id="song-info-3">
                 <div class="title">Simon Perdriaud</div>
                 <div class="sub-line">
-                  <div class="subtitle">Il pense crypto, dort crypto, mange crypto... Il a un 6eme sens qui lui permet de détecter le centre de crypto-minage le plus proche. <br><br>
+                  <div class="subtitle">
+                    <br />
+                    Il pense crypto, dort crypto, mange crypto... Il a un 6eme
+                    sens qui lui permet de détecter le centre de crypto-minage
+                    le plus proche. <br /><br />
                   </div>
                 </div>
               </label>
               <label class="song-info" id="song-info-3">
                 <div class="title">Thomas Legendarme</div>
                 <div class="sub-line">
-                  <div class="subtitle">Par un jour de grand froid, il se réfugie dans une centre de crypto-minage. La sympathie de l'équipe et la chaleur de la pièce en font maintenant un amoureux des cryptos.</div>
+                  <div class="subtitle">
+                    <br />
+                    Par un jour de grand froid, il se réfugie dans une centre de
+                    crypto-minage. La sympathie de l'équipe et la chaleur de la
+                    pièce en font maintenant un amoureux des cryptos.
+                  </div>
                 </div>
               </label>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="only-for-fix-about">
+      <div class="container-all-newsletter">
+        <div class="subtitle-container" id="subtitle-container-footer">
+          <h1>NEWSLETTER</h1>
+          <div class="subtitle-line" id="subtitle-line-footer"></div>
+        </div>
+        <div class="container-nl-dekstop">
+          <p>
+            Don’t miss a thing about crypto !<br />Subscribe to our newsletter
+          </p>
+
+          <div class="container-input-footer">
+            <input
+              class="email-footer"
+              id="emailAddress"
+              type="email"
+              placeholder="Please enter your email..."
+            />
+
+            <button
+              class="click-footer"
+              id="buttonSubscribe"
+              type="submit"
+              value="Subscribe"
+            >
+              subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="linkNavbar">
+        <ul>
+          <li><a href="/index.html">HOME</a></li>
+          <li><a href="/about-them.html">ABOUT THEM</a></li>
+          <li><a href="/contact-them.html">CONTACT US</a></li>
+        </ul>
+      </div>
+      <div class="legacy">
+        <ul>
+          <li>Mentions légales</li>
+          <li>CGU</li>
+          <li>SMDJT - 2022</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="contact-them.js"></script>
   </body>
 </html>

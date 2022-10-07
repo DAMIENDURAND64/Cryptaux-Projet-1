@@ -56,3 +56,16 @@ button.addEventListener("click", function () {
 
   return;
 });
+
+// // FOOTER
+
+const buttonSubscribe = document.getElementById("buttonSubscribe");
+const emailAddress = document.getElementById("emailAddress");
+
+buttonSubscribe.addEventListener("click", function () {
+  if (emailAddress.value) {
+    return alert("Congrats you subscribe !!!");
+  }
+
+  return alert("Sorry is not a valid adress ...");
+});
