@@ -269,3 +269,66 @@ footer li {
   font-size: 11px;
   margin: 10px 0;
 }
+
+.linkNavbar {
+  display: none;
+}
+
+@media screen and (min-width: 520px) {
+  footer {
+    height: 340px;
+  }
+  .container-nl-dekstop {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .container-input-footer {
+    width: 45%;
+  
+  
+  }
+  .container-nl-dekstop p {
+    margin-right: 40px;
+    
+  }
+
+  .email-footer {
+    width: 80%;
+  }
+
+  .linkNavbar {
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .linkNavbar ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    flex-direction: row column;
+    text-align: center;
+  
+  }
+  .linkNavbar li {
+    font-size: 18px;
+    margin: 0px 22px 0px 22px;
+  }
+  footer .legacy ul {
+    width: 70%;
+    display: flex;
+
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 30%;
+  }
+  .legacy li {
+    width: auto;
+    text-align: center;
+    display: flex;
+  }
+}
