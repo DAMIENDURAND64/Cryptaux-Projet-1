@@ -185,6 +185,7 @@ h1 {
   font-weight: 400;
   font-size: 28px;
   text-align: center;
+  white-space: nowrap;
   margin-bottom: 10px;
 }
 

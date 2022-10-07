@@ -1,5 +1,9 @@
 /* LIVE-CRYPTO */
-
+.all-crypto-live {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 /* Graph selected crypto */
 
 .live-crypto-container {
@@ -16,19 +20,14 @@
 }
 
 .active-crypto-contenu {
-  /* opacity: 1 !important; */
-  /* z-index: 2 !important; */
   display: flex !important;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  animation: fade 0.5s forwards;
 }
 
 .single-crypto-container {
   display: none;
-  /* opacity: 0; */
-  /* z-index: 1; */
   width: 100%;
   height: 100%;
   position: absolute;
@@ -111,6 +110,7 @@
       rgba(88, 87, 87, 0.3) 100%
     ),
     #35a18b;
+  transition: all 0, 5s ease;
 }
 
 .active-crypto-button p {
@@ -139,4 +139,94 @@
 
 .crypto-bloc p span {
   font-size: 10px;
+}
+
+@media (min-width: 520px) {
+  .all-crypto-live {
+    width: 40%;
+    margin-left: 3%;
+  }
+
+  .container-crypto-desktop {
+    width: 100%;
+  }
+
+  .live-crypto-container {
+    min-width: 215px;
+    border-radius: 15px;
+  }
+
+  .image-graph-container {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+  .logo-box {
+    width: 175px;
+    height: 60px;
+    border-radius: 12px;
+  }
+
+  .logo-box .name-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo-box p {
+    font-size: 24px;
+    margin-left: 20px;
+  }
+
+  .cryptos-grid {
+    height: 200px;
+    min-width: 215px;
+  }
+
+  .crypto-bloc {
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 15px;
+  }
+
+  .cryptos-grid img {
+    width: 40%;
+    height: auto;
+    max-width: 45px;
+  }
+
+  .crypto-bloc p {
+    font-size: 24px;
+  }
+
+  .crypto-bloc p span {
+    font-size: 16 px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .cryptos-grid {
+    grid-gap: 20px;
+  }
+
+  .crypto-bloc {
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 15px;
+  }
+
+  .cryptos-grid img {
+    width: 35%;
+    height: auto;
+    max-width: 40px;
+    margin: 0 2px;
+  }
+
+  .crypto-bloc p {
+    font-size: 26px;
+    margin: 0 1px 0 2px;
+  }
+
+  .crypto-bloc p span {
+    font-size: 16px;
+  }
 }
