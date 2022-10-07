@@ -1,0 +1,177 @@
+/* PARAMETRES GENERAUX */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* IMAGES */
+
+input[type="radio"] {
+  display: none;
+}
+
+.cards {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.card {
+  filter: drop-shadow(rgb(53, 161, 139) 1px 5px 5px);
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.container {
+  margin-top: -30px;
+  width: 100%;
+  height: 100;
+  transition: background 0.4s ease-in;
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards img {
+  width: 100%;
+  height: 50%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#item-1:checked ~ .cards #picture-1,
+#item-2:checked ~ .cards #picture-2,
+#item-3:checked ~ .cards #picture-3,
+#item-4:checked ~ .cards #picture-4,
+#item-5:checked ~ .cards #picture-5 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 3;
+}
+
+#item-1:checked ~ .cards #picture-2,
+#item-2:checked ~ .cards #picture-3,
+#item-3:checked ~ .cards #picture-4,
+#item-4:checked ~ .cards #picture-5,
+#item-5:checked ~ .cards #picture-1 {
+  transform: translatex(-30%) scale(0.8);
+  opacity: 0.8;
+  z-index: 2;
+}
+
+#item-1:checked ~ .cards #picture-3,
+#item-2:checked ~ .cards #picture-4,
+#item-3:checked ~ .cards #picture-5,
+#item-4:checked ~ .cards #picture-1,
+#item-5:checked ~ .cards #picture-2 {
+  transform: translatex(-50%) scale(0.6);
+  opacity: 0.2;
+  z-index: 1;
+}
+
+#item-1:checked ~ .cards #picture-4,
+#item-2:checked ~ .cards #picture-5,
+#item-3:checked ~ .cards #picture-1,
+#item-4:checked ~ .cards #picture-2,
+#item-5:checked ~ .cards #picture-3 {
+  transform: translatex(50%) scale(0.6);
+  opacity: 0.2;
+  z-index: 1;
+}
+
+#item-1:checked ~ .cards #picture-5,
+#item-2:checked ~ .cards #picture-1,
+#item-3:checked ~ .cards #picture-2,
+#item-4:checked ~ .cards #picture-3,
+#item-5:checked ~ .cards #picture-4 {
+  transform: translatex(30%) scale(0.8);
+  opacity: 0.8;
+  z-index: 2;
+}
+
+/* PRESENTATION */
+
+.player {
+  margin-top: 100px;
+  border-radius: 8px;
+  width: 90%;
+  padding: 16px 16px;
+  height: 400px;
+}
+
+.upper-part {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  overflow: hidden;
+  font-size: 14px;
+  max-width: 180px;
+  min-width: 180px;
+  height: 85%;
+}
+
+.title {
+  font-size: 16px;
+}
+
+.song-info {
+  display: block;
+  width: 100%;
+  color: white;
+}
+
+.sub-line {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.subtitle {
+  font-size: 12px;
+  line-height: 16px;
+  color: white;
+}
+
+.info-area {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  transition: transform 0.4s ease-in;
+}
+
+#item-1:checked ~ .player #test {
+  transform: translateY(0);
+}
+
+#item-2:checked ~ .player #test {
+  transform: translateY(-20%);
+}
+
+#item-3:checked ~ .player #test {
+  transform: translateY(-40%);
+}
+
+#item-4:checked ~ .player #test {
+  transform: translateY(-60%);
+}
+
+#item-5:checked ~ .player #test {
+  transform: translateY(-80%);
+}

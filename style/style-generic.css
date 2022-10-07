@@ -20,6 +20,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 header {
@@ -128,6 +130,7 @@ header {
 }
 
 header ul {
+  z-index: 2;
   background: #007860;
   position: absolute;
   width: 280px;
@@ -161,9 +164,10 @@ a {
 .container-top-body-image {
   width: 100%;
   height: auto;
-  overflow: hidden;
+
   display: flex;
   justify-content: center;
+  margin-top: 120px;
 }
 
 .top-body-image {

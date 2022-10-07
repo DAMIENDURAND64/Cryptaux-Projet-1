@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap%27");
+@import url("https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&display=swap%27");
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: black;
+  font-family: "Roboto Condensed", Verdana, sans-serif;
+}
+
+main {
+  width: 100%;
+}
+
+.h1-contactThem {
+  margin-bottom: 10px;
+  font-family: "Cuprum", Impact, sans-serif;
+  color: white;
+  text-align: center;
+  font-weight: normal;
+}
+
+.hr-contactThem {
+  width: 40%;
+  height: 5px;
+  background-color: #35A18B;
+  border-radius: 2px;
+  border: #35A18B;
+  margin: auto
+}
+
+.p-contactThem {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.form {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.input-name,
+.input-email,
+.inputReturn,
+select,
+textarea {
+  width: 100%;
+  height: 25px;
+  border-radius: 5px;
+  border: solid white;
+  filter: drop-shadow(1px 5px 5px #35A18B);
+  background: radial-gradient(#ffffff, lightgrey);
+  z-index: 1;
+}
+.messageThem {
+  height: 75px;
+  max-width: 100%;
+}
+
+.button-send-contact {
+  background-color: #007860;
+  float: right;
+  border: solid;
+  border-radius: 5px;
+  width: 20%;
+  height: 30px;
+  margin-top: 8px;
+}
